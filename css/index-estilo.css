@@ -16,6 +16,16 @@ main {
 
 }
 
+.posicionamento-detalhe {
+    position: relative;
+}
+
+.posicionamento-detalhe div {
+    position: absolute;
+    bottom:0;
+    left: 0;
+}
+
 .fundo-main {
     height: 300px;
 }
