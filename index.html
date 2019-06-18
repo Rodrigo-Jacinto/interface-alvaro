@@ -12,6 +12,25 @@
 </head>
 
 <body>
+    <div class="container w-80 fixed-top" id="menu-ingresso">
+        <nav class=" row bg-white p-3">
+
+            <div class="col-md-7 col-sm-6 col-6">
+                <!-- Botão de compartilhar -->
+                <a href="#">
+                    <img src="https://img.icons8.com/windows/32/000000/upload.png">
+                </a>
+                <!-- Botão de Curtir -->
+                <a href="#">
+                    <img src="https://img.icons8.com/ios/32/000000/hearts.png">
+                </a>
+            </div>
+
+            <div class="col-md-5 col-sm-6 col-6 text-right">
+                <button class="btn btn-block btn-cor">Ingressos</button>
+            </div>
+        </nav>
+    </div>
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -63,7 +82,7 @@
                 <img src="img/logo.jpg" alt="Villa Mix" class="img-fluid">
             </div>
 
-            <div class="col-md-4 border p-3 posicionamento-detalhe" style="background-color:#ecf0f1">
+            <div class="col-md-4 border p-3 posicionamento-detalhe">
                 SET <br />03
 
                 <h5 class="mb-5">VILLA MIX BH 2019</h5>
@@ -88,7 +107,8 @@
             </div>
 
             <div class="col-md-4 col-sm-4 col-12 text-right">
-                <button class="btn btn-block btn-cor">Ingressos</button>
+                <button class="btn btn-block btn-cor" data-target="#modal-ingresso" data-toggle="modal"
+                    id="btn-ingresso">Ingressos</button>
             </div>
         </section>
 
@@ -98,8 +118,7 @@
 
                 <b>
                     Excursão Villa Mix Belo Horizonte saindo do Rio de Janeiro, pacote completo com ingressos,
-                    hotéis e
-                    transporte!
+                    hotéis e transporte!
                     Sobre este evento
                 </b>
 
@@ -248,6 +267,7 @@
 
     </footer>
 
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -257,6 +277,184 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
+
+    <script>
+
+    </script>
 </body>
 
 </html>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="modal-ingresso" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title" id="exampleModalScrollableTitle">Inscreva-se</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body p-3">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header bg-white" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="modal"
+                                    data-target="#modal-ingresso2" data-dismiss="modal" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Pessoa Física
+                                </button>
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header bg-white" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="modal"
+                                    data-target="#modal-ingresso2" data-dismiss="modal" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Grupo
+                                </button>
+                            </h2>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="modal-ingresso2" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title" id="exampleModalScrollableTitle">Selecionar quantidade/tipos de ingressos</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card borda-azul mb-3">
+                    <div class="card-body">
+                        <form action="" class="float-right w-20">
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option value="">0</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                </select>
+                            </div>
+                        </form>
+                        <h6 class="card-title m-0">PACOTE E-SUITES (DUPLO)</h6>
+                        <p class="card-text">R$399,00 + R$39,86 taxa</p>
+                        <hr>
+                        <span class="texto-pequeno">*VALOR POR PESSOA</span>
+                    </div>
+                </div>
+
+
+                <div class="card borda-azul mb-3">
+                    <div class="card-body">
+                        <form action="" class="float-right w-20">
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option value="">0</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                </select>
+                            </div>
+                        </form>
+                        <h6 class="card-title m-0">PACOTE E-SUITES (DUPLO)</h6>
+                        <p class="card-text">R$399,00 + R$39,86 taxa</p>
+                        <hr>
+                        <span class="texto-pequeno">*VALOR POR PESSOA</span>
+                    </div>
+                </div>
+
+
+                <div class="card borda-azul mb-3">
+                    <div class="card-body">
+                        <form action="" class="float-right w-20">
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option value="">0</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                </select>
+                            </div>
+                        </form>
+                        <h6 class="card-title m-0">PACOTE E-SUITES (DUPLO)</h6>
+                        <p class="card-text">R$399,00 + R$39,86 taxa</p>
+                        <hr>
+                        <span class="texto-pequeno">*VALOR POR PESSOA</span>
+                    </div>
+                </div>
+
+                <ul class="nav m-auto w-50">
+                    <li class="nav-item">
+                        <img title="mastercard" src="https://img.icons8.com/color/50/000000/mastercard.png">
+                        <span></span>
+                    </li>
+                    <li class="nav-item">
+                        <img title="visa" src="https://img.icons8.com/color/48/000000/visa.png">
+                        <span></span>
+                    </li>
+
+                    <li class="nav-item">
+                        <img title="amex" src="https://img.icons8.com/color/48/000000/amex.png">
+                        <span></span>
+                    </li>
+
+                    <li class="nav-item">
+                            <img title="boleto" src="https://img.icons8.com/color/48/000000/boleto-bankario.png">
+                        <span></span>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="modal-footer">
+
+                <button type="button" data-toggle="modal" data-target="#modal-ingresso" data-dismiss="modal" class="btn btn-danger">Voltar</button>
+                <button type="button" class="btn btn-success">Continue</button>
+            </div>
+        </div>
+    </div>
+</div>
