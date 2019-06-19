@@ -9,9 +9,15 @@ main {
     border-radius: 5px;
 }
 
+header {
+    box-shadow: 1px 1px 2px #ccc;
+}
+
+
+
 .texto-pequeno {
 
-    font-size:12px;
+    font-size:13px;
 }
 
 .borda-azul {
@@ -20,6 +26,7 @@ main {
 }
 
 .texto {
+  
     font-weight:bold;
     font-size: 1.5em;
     color:#F05537 !important;
