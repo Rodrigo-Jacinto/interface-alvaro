@@ -287,6 +287,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
+      <script src="js/index-script.js">
+      </script>  
 
     <script>
 
@@ -361,18 +363,18 @@
                     <div class="card-body">
                         <form action="" class="float-right w-20">
                             <div class="form-group">
-                                <select class="form-control">
-                                    <option value="" selected disabled>0</option>
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                    <option value="">4</option>
-                                    <option value="">5</option>
-                                    <option value="">6</option>
-                                    <option value="">7</option>
-                                    <option value="">8</option>
-                                    <option value="">9</option>
-                                    <option value="">10</option>
+                                <select class="form-control" id="select-ingresso-duplo">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
                                 </select>
                             </div>
                         </form>
@@ -388,18 +390,18 @@
                     <div class="card-body">
                         <form action="" class="float-right w-20">
                             <div class="form-group">
-                                <select class="form-control">
-                                    <option value="" selected disabled>0</option>
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                    <option value="">4</option>
-                                    <option value="">5</option>
-                                    <option value="">6</option>
-                                    <option value="">7</option>
-                                    <option value="">8</option>
-                                    <option value="">9</option>
-                                    <option value="">10</option>
+                                <select class="form-control" id="select-ingresso-triplo">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
                                 </select>
                             </div>
                         </form>
@@ -415,18 +417,18 @@
                     <div class="card-body">
                         <form action="" class="float-right w-20">
                             <div class="form-group">
-                                <select class="form-control">
-                                    <option value="" selected disabled>0</option>
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                    <option value="">4</option>
-                                    <option value="">5</option>
-                                    <option value="">6</option>
-                                    <option value="">7</option>
-                                    <option value="">8</option>
-                                    <option value="">9</option>
-                                    <option value="">10</option>
+                                <select class="form-control" id="select-ingresso-pista">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
                                 </select>
                             </div>
                         </form>
@@ -464,7 +466,7 @@
 
                 <button type="button" data-toggle="modal" data-target="#modal-ingresso" data-dismiss="modal"
                     class="btn btn-danger">Voltar</button>
-                <button type="button" class="btn btn-success" disabled>Continue</button>
+                <a href="chekout.html" class="btn btn-success disabled" id="button-ingresso" role="button" disabled>Continue</a>
             </div>
         </div>
     </div>
